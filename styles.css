@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --bg-color: hsl(0 0 90);
+
+    --tictactoe-bg: hsl(0 0 30);
+    --tictactoe-item-bg: hsl(0 0 100);
+
+    color: black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--bg-color);
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100dvh;
+}
+
+#tic-tac-toe{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-auto-rows: 100px;
+    gap: 10px;
+
+    background-color: var(--tictactoe-bg);
+}
+
+.item{
+    background-color: var(--tictactoe-item-bg);
+}
+
+.item:hover{
+    cursor: pointer;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5%;
+
+    width: 100%;
+}
+
+#buttons > button{
+    padding: 10px;
+    width: 100%;
+    word-wrap: nowrap;
+    overflow: hidden;
+}
+
+#buttons > button:hover{
+    cursor: pointer;
+}
+
+#new-game, #change-player{
+    background-color: hsl(200 50 40);
+    border: none;
+    border-radius: 10px;
+    color: white !important;
+}
+
+#new-game:hover, #change-player:hover{
+    background-color: hsl(200 50 60);
+    color: black !important;
+}
