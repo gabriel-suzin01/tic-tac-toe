@@ -39,6 +39,11 @@ body{
 }
 
 .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2em;
     background-color: var(--tictactoe-item-bg);
 }
 
@@ -67,14 +72,25 @@ body{
     cursor: pointer;
 }
 
-#new-game, #change-player{
+#new-game{
     background-color: hsl(200 50 40);
     border: none;
     border-radius: 10px;
     color: white !important;
 }
 
-#new-game:hover, #change-player:hover{
+#new-game:hover{
     background-color: hsl(200 50 60);
     color: black !important;
+}
+
+#change-player{
+    background-color: hsl(0 0 20);
+    border: none;
+    border-radius: 10px;
+    color: white !important;
+}
+
+#change-player:hover{
+    background-color: hsl(0 0 30);
 }
